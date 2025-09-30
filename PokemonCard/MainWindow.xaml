@@ -1,0 +1,69 @@
+﻿<Window x:Class="PokemonCard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonCard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    
+    <Grid Margin="20" Background="Beige">
+        
+        <!-- Rows for card sections -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- HEADER -->
+            <RowDefinition Height="2*"/> <!-- PICTURE -->
+            <RowDefinition Height="Auto"/> <!-- SUB INFO -->
+            <RowDefinition Height="*"/> <!-- MOVE 1 -->
+            <RowDefinition Height="*"/> <!-- MOVE 2 -->
+            <RowDefinition Height="Auto"/> <!-- WEAK/RESIST/RETREAT -->
+            <RowDefinition Height="Auto" /> <!-- FOOTER -->
+        </Grid.RowDefinitions>
+        
+        <!-- Colums -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <!-- HEADER -->
+        <Border Grid.Row="0" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1" >
+            <TextBlock Text="HEADER" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        
+        <!-- PICTURE AREA -->
+        <Border Grid.Row="1" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <Rectangle Width="200" Height="200" Fill="DarkGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        
+        <!-- SUB INFO -->
+        <Border Grid.Row="2" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Text="SUB-INFO" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        
+        <!-- MOVE 1 -->
+        <Border Grid.Row="3" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Text="MOVE 1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+        
+        
+        <!-- MOVE 2 -->
+        <Border Grid.Row="4" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Text="MOVE 2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        
+        <!-- WEAK/RESIST/RETREAT -->
+        <Border Grid.Row="5" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Text="WEAK / RESIST / RETREAT" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        
+        <!-- FOOTER -->
+        <Border Grid.Row="6" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Text="FOOTER" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+
+    </Grid>
+    
+</Window>
