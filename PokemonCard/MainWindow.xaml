@@ -187,6 +187,8 @@
             <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
                 <TextBlock FontSize="8" Text="JAYADADA WADADAD NICE" TextWrapping="Wrap"/>
             </Border>
+            
+            <!--asdklaökd-->
            
             
         </Grid>
