@@ -38,17 +38,17 @@
             
             <!-- NAME -->
             <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="2" Padding="5">
-                <TextBlock Text="NAME" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="NameTextBlock" Text="NAME" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Border>
 
             <!-- EMPTY SPACE -->
             <Border  Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="2" Padding="5">
-                <TextBlock Text="(empty)" HorizontalAlignment="Center" VerticalAlignment="center"/>
+                <TextBlock x:Name="EmptyTextBlock" Text="(empty)" HorizontalAlignment="Center" VerticalAlignment="center"/>
             </Border>
             
             <!-- HP -->
             <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="2" Padding="5">
-                <TextBlock Text="HP" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="HpTextBlock" Text="HP" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Border>
             
         </Grid>
@@ -57,14 +57,14 @@
         <!-- IMAGE ROW 1 -->
         <Border Grid.Row="1" Grid.ColumnSpan="3" Margin="6" BorderBrush="Black" 
                 BorderThickness="1" Background="LightGray">
-            <Rectangle Width="220" Height="220" Fill="DarkGray" HorizontalAlignment="Center"
+            <Rectangle x:Name="ImageRecatangle" Width="220" Height="220" Fill="DarkGray" HorizontalAlignment="Center"
                        VerticalAlignment="Center"/>
 
         </Border>
         
        <!-- SUB INFO ROW 2-->
         <Border Grid.Row="2" Grid.ColumnSpan="3" Margin="6" BorderBrush="Black" BorderThickness="1">
-            <TextBlock Text="SUB-INFO / NO / POKEMON TYPE / HT WT" TextAlignment="Center"/>
+            <TextBlock x:Name="SubInfoTextBlock" Text="SUB-INFO / NO / POKEMON TYPE / HT WT" TextAlignment="Center"/>
         </Border>
 
         
@@ -83,22 +83,22 @@
 
             <!-- HEADER ROW -->
             <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock  Text="ICON"/>
+                <TextBlock x:Name="Attack1IconTextBlock" Text="ICON"/>
             </Border>
 
             <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="ATTACK NAME" TextAlignment="Center"/>
+                <TextBlock x:Name="Attack1NameTextBlock" Text="ATTACK NAME" TextAlignment="Center"/>
             </Border>
 
             <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="DMG"/>
+                <TextBlock x:Name="Attack1DMGTextBlock" Text="DMG"/>
             </Border>
             
             
             <!-- DESCRIPTION ROW -->
             <Border Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" BorderBrush="Black" 
                     BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="ATTACK DESCRIPTION GOES HERE, SHORT RULES AFFECT LIFE LOREM IPSUM POTATOES IS NICE LIFE IS LIFE YEAAAY " TextWrapping="Wrap"/>
+                <TextBlock x:Name="Attack1DescTextBlock" Text="ATTACK DESCRIPTION GOES HERE, SHORT RULES AFFECT LIFE LOREM IPSUM POTATOES IS NICE LIFE IS LIFE YEAAAY " TextWrapping="Wrap"/>
             </Border>
             
         </Grid>
@@ -124,22 +124,22 @@
 
             <!-- HEADER ROW -->
             <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock  Text="ICON"/>
+                <TextBlock x:Name="Attack2Icon"  Text="ICON"/>
             </Border>
 
             <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="ATTACK NAME" TextAlignment="Center"/>
+                <TextBlock x:Name="Attack2NameTextBlock" Text="ATTACK NAME" TextAlignment="Center"/>
             </Border>
 
             <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="DMG"/>
+                <TextBlock x:Name="Attack2DMGTextBlock" Text="DMG"/>
             </Border>
 
 
             <!-- DESCRIPTION ROW -->
             <Border Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" BorderBrush="Black" 
             BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="ATTACK DESCRIPTION GOES HERE, SHORT RULES AFFECT LIFE LOREM IPSUM POTATOES IS NICE LIFE IS LIFE YEAAAY " TextWrapping="Wrap"/>
+                <TextBlock x:Name="Attack2DescTextBlock" Text="ATTACK DESCRIPTION GOES HERE, SHORT RULES AFFECT LIFE LOREM IPSUM POTATOES IS NICE LIFE IS LIFE YEAAAY " TextWrapping="Wrap"/>
             </Border>
 
         </Grid>
@@ -155,15 +155,15 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="WEAKNESS"/>
+                <TextBlock x:Name="WeaknessTextBlock" Text="WEAKNESS"/>
             </Border>
 
             <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="RESISTANCE"/>
+                <TextBlock x:Name="ResistanceTextBlock" Text="RESISTANCE"/>
             </Border>
 
             <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock Text="RETREAT"/>
+                <TextBlock x:Name="RetreatTextBlock" Text="RETREAT"/>
             </Border>
         </Grid>
 
@@ -177,15 +177,15 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock FontSize="8" Text="ICON ICON # / SET"/>
+                <TextBlock x:Name="SetNumberTextBlock" FontSize="8" Text="ICON ICON # / SET"/>
             </Border>
 
             <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock FontSize="8" Text="COPYWRIGHT TEXT"/>
+                <TextBlock x:Name="CopyWrightTextBlock" FontSize="8" Text="COPYWRIGHT TEXT"/>
             </Border>
 
             <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
-                <TextBlock FontSize="8" Text="JAYADADA WADADAD NICE" TextWrapping="Wrap"/>
+                <TextBlock x:Name="FooterTextTextBlock" FontSize="8" Text="JAYADADA WADADAD NICE" TextWrapping="Wrap"/>
             </Border>
             
             <!--asdklaökd-->
